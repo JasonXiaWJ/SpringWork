@@ -78,6 +78,7 @@ public class AccountController {
 	    public FavUser findBySelfDefine(@PathVariable String username){
 	    	Account acount = accountRepository.findBySelfDefine(username);
 	        System.out.println("acount name:"+acount.getName());
+	        System.out.println("acount id:"+acount.getId());
 	        FavUser favUser = new FavUser();
 	        favUser.setUserId(acount.getId()+"");
 	        favUser.setUserName(acount.getUsername());
