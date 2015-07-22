@@ -14,12 +14,12 @@ public class LockTest {
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-                output.output("zhangsan......");
+                output.output("zhangsan......1234");
             };  
         }.start();        
         new Thread() {  
             public void run() {  
-                output.output("lisi......");
+                output.output("lisi......1234");
             };  
         }.start();  
     }  
